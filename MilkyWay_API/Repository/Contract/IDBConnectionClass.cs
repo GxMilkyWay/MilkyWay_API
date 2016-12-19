@@ -9,6 +9,7 @@ namespace MilkyWay_API.Contract
     interface IDBConnectionClass
     {
         IDbConnection OpenConnection();
+
     }
 }
 

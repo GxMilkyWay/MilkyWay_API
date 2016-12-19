@@ -12,6 +12,7 @@ namespace MilkyWay_API.Repository.Implementation
     public class DBConnectionClass : IDBConnectionClass
     {
         public IDbConnection OpenConnection()
+
         {
             IDbConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
             connection.Open();

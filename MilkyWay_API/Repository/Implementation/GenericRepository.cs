@@ -12,7 +12,6 @@ namespace MilkyWay_API.Repository.Implementation
         {
             throw new NotImplementedException();
         }
-
         public IEnumerable<TEntity> GetAll()
         {
             throw new NotImplementedException();

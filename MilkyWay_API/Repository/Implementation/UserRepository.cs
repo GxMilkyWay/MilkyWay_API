@@ -12,8 +12,7 @@ namespace MilkyWay_API.Repository.Implementation
     public class UserRepository :IGenericRepository<User>
     {
         IDbConnection _conn;
-
-        public User Get(int Id)
+                public User Get(int Id)
         {
             throw new NotImplementedException();
         }

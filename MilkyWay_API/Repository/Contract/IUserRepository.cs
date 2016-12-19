@@ -10,5 +10,6 @@ namespace MilkyWay_API.Contract
     internal interface IUserRepository: IGenericRepository<User>
     {
         //Define User specific implementation inside this interface.
+
     }
 }

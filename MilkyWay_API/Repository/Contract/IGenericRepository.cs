@@ -9,6 +9,7 @@ namespace MilkyWay_API
     internal interface IGenericRepository<TEntity> where TEntity:class
     {
         TEntity Get(int Id);
+
         IEnumerable<TEntity> GetAll();
         bool Add(TEntity obj);
         bool Delete(int Id);
