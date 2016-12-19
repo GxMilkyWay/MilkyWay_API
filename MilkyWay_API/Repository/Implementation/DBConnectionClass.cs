@@ -1,4 +1,5 @@
 ﻿using MilkyWay_API.Contract;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,7 +15,7 @@ namespace MilkyWay_API.Repository.Implementation
         public IDbConnection OpenConnection()
 
         {
-            IDbConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
+            IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
             connection.Open();
             return connection;
         }
