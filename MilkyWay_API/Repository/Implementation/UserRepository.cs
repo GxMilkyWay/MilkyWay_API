@@ -9,10 +9,15 @@ using Dapper;
 
 namespace MilkyWay_API.Repository.Implementation
 {
-    public class UserRepository :IGenericRepository<User>
+    public class UserRepository : IGenericRepository<User>
     {
         IDbConnection _conn;
-                public User Get(int Id)
+
+        public User GetByParams(User obj)
+        {
+            throw new NotImplementedException();
+        }
+        public User Get(int Id)
         {
             throw new NotImplementedException();
         }

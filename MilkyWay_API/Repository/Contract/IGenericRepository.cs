@@ -14,5 +14,6 @@ namespace MilkyWay_API
         bool Add(TEntity obj);
         bool Delete(int Id);
         bool Update(int Id); 
+        TEntity GetByParams(TEntity obj);
     }
 }
