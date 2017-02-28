@@ -10,12 +10,14 @@ using System.Web.Http;
 
 namespace MilkyWay_API.Controllers
 {
+    [RoutePrefix("Regis")]
     public class UserController : ApiController
     {
         UserRepository _userRep;
 
         // GET: api/User
-        [Route("User")]
+        //[Route("User123")]
+        [ActionName("GetUser")]
         [HttpGet]
         public IEnumerable<User> Get()
         {
@@ -28,6 +30,14 @@ namespace MilkyWay_API.Controllers
         {
             return "value";
         }
+        // POST: api/User
+        [Route("User")]
+        [HttpGet]
+        public string PostGet([FromBody]User objUser)
+        {
+            return "HI";
+        }
+
 
         // POST: api/User
         [Route("User")]
