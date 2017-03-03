@@ -7,7 +7,7 @@ namespace MilkyWay_API.Repository.Implementation
 {
     public class GenericRepository<TEntity>: IGenericRepository<TEntity> where TEntity:class
     {
-        public TEntity GetByParams(TEntity obj)
+        public List<TEntity> GetByParams(TEntity obj)
         {
             throw new NotImplementedException();
         }

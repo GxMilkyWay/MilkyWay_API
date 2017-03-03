@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilkyWay_API", "MilkyWay_API\MilkyWay_API.csproj", "{C0FC2864-D7E6-4CA9-8600-4E21A9ABF9D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security", "Security\Security.csproj", "{F863EAF5-AA3C-4497-B0DE-EC98FAA51159}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C0FC2864-D7E6-4CA9-8600-4E21A9ABF9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0FC2864-D7E6-4CA9-8600-4E21A9ABF9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0FC2864-D7E6-4CA9-8600-4E21A9ABF9D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F863EAF5-AA3C-4497-B0DE-EC98FAA51159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F863EAF5-AA3C-4497-B0DE-EC98FAA51159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F863EAF5-AA3C-4497-B0DE-EC98FAA51159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F863EAF5-AA3C-4497-B0DE-EC98FAA51159}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

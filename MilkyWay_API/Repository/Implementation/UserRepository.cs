@@ -13,7 +13,7 @@ namespace MilkyWay_API.Repository.Implementation
     {
         IDbConnection _conn;
 
-        public User GetByParams(User obj)
+        public List<User> GetByParams(User obj)
         {
             throw new NotImplementedException();
         }

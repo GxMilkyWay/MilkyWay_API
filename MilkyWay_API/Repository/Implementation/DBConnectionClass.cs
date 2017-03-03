@@ -12,10 +12,16 @@ namespace MilkyWay_API.Repository.Implementation
 {
     public class DBConnectionClass : IDBConnectionClass
     {
-        public IDbConnection OpenConnection()
+        //public IDbConnection OpenConnection()
 
+        //{
+        //    IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
+        //    connection.Open();
+        //    return connection;
+        //}
+        public IDbConnection OpenConnection()
         {
-            IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
+            IDbConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
             connection.Open();
             return connection;
         }

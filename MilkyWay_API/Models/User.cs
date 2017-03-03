@@ -19,4 +19,10 @@ namespace MilkyWay_API.Models
         public int OrganizationId { get; set; }
         public bool? Delete_Flag { get; set; }
     }
+
+    public class LoginData
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
+    }
 }
