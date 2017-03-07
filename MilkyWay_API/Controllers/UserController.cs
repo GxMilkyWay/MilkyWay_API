@@ -19,9 +19,9 @@ namespace MilkyWay_API.Controllers
         UserRepository _userRep;
         LoginRepository _lgnRep;
 
-        // GET: api/User
+         //GET: api/User
         [HttpPost, Route("Verify")]
-        public int VerifyLogin(LoginData LoginData)
+        public bool VerifyLogin(LoginData LoginData)
         {
              
             //LoginData lgn = new LoginData();
@@ -31,10 +31,10 @@ namespace MilkyWay_API.Controllers
             _lgnRep = new LoginRepository();
             // var result = _lgnRep.AddUser(LoginData);
            var result = _lgnRep.VerifyLogin(LoginData);
-            return 1;
+           return result;
         }
 
-        //// GET: api/User
+        // GET: api/User
         //[Route("Verify/{password}")]
         //[HttpGet]
         //public int VerifyLogin(string password)

@@ -24,7 +24,7 @@ namespace Security
             return string.Format(decriptedFromJavascript);
         }
 
-        private static string DecryptStringFromBytes(byte[] cipherText, byte[] key, byte[] iv)
+        public static string DecryptStringFromBytes(byte[] cipherText, byte[] key, byte[] iv)
         {
             // Check arguments.
             if (cipherText == null || cipherText.Length <= 0)
@@ -86,7 +86,7 @@ namespace Security
             return plaintext;
         }
 
-        private static byte[] EncryptStringToBytes(string plainText, byte[] key, byte[] iv)
+        public static byte[] EncryptStringToBytes(string plainText, byte[] key, byte[] iv)
         {
             // Check arguments.
             if (plainText == null || plainText.Length <= 0)
